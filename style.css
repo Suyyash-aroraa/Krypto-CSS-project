@@ -1,0 +1,142 @@
+body, html{
+    background-color: #010922;
+    color: whitesmoke;
+    font-family: Roboto;
+}
+
+
+body{
+    margin: 0 10% 0 10%;
+}
+
+@media (min-width:901px) {
+    nav{
+        display: flex;
+        justify-content: flex-start;
+        gap: 15px;
+        margin-top: 5%;
+    
+    }
+    
+    #Logo{
+        font-family: 'Outfit',sans-serif;
+        font-size: 21px;
+        align-self: center;
+        margin: 0;
+    }
+    
+    #Links{
+        display: inline-flex;
+        flex-direction: row;
+        gap: 15px;
+        align-self: flex-end;
+        margin: 0;
+        margin-left: auto;
+        justify-self: flex-end;
+        flex: 0 1 0;
+    }
+    
+    nav p{
+        margin: 0;
+        font-size: large;
+        align-self: flex-end;
+        width: fit-content;
+        padding: 1px;
+    }
+    nav a:active, nav a {
+        color: whitesmoke;
+        text-decoration: none;
+        width: 80px;
+    }
+    
+    nav span:hover{
+        text-decoration: underline;
+    }
+    
+    .Hero{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+        gap: 15px;
+        margin-top: 5rem;
+    }
+    .hero-body{
+        text-align: justify;
+        align-self: center;
+        width: 50%;
+    }
+    
+    .Hero>img{
+        display: inline;
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+        left: 4rem;
+    }
+     h1{
+        font-size: 3rem;
+        text-align: left;
+     }
+    
+    .buy-sell-bar{
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 1rem;
+    }
+    
+    .buy-sell1 p, .buy-sell2 p{
+        text-align: center;
+        margin: 0;
+        padding: 10px 0 10px 0;
+        border: 1px solid white;
+        border-radius: 100000000000000000000000000000000px;
+    }
+    
+    .buy-sell1 p {
+        background-color: #8080D7;
+        border-color: #8080D7;
+    }
+    
+    .buy-sell-bar>div:hover{
+        opacity: 50%;
+    }
+    
+}
+
+
+@media (max-width: 900px){
+    nav p{
+        visibility: hidden;
+    }
+
+    .Hero{
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: center;
+    }
+    .buy-sell-bar{
+        display: flex;
+        gap: 80px;
+        justify-content: center;
+    }
+    .buy-sell1 p, .buy-sell2 p{
+        margin-top: 1rem;
+        padding: 10px 20px 10px 20px;
+        border: white solid;
+        border-radius: 10000000000000000000000000000px;
+    }
+    .buy-sell1 p{
+        background-color: #8080D7;
+        border: #8080D7;
+    }
+    img{
+        width: 70%;
+        align-self: center;
+    }
+    @media (max-width: 395px) {
+        .buy-sell-bar{
+            gap: 40px;
+        }
+    }
+}
